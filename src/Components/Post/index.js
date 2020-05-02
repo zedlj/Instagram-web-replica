@@ -1,25 +1,29 @@
 // src/components/Post/index.js
 import React, { Component } from "react";
+import "./Post.css";
+import Everest from "./everest.jpg"
+import Girl from "./girl.jpg"
+
 class Post extends Component {
   render() {
     return <article className="Post" ref="Post">
         <header>
           <div className="Post-user">
             <div className="Post-user-avatar">
-              <img src="https://images.unsplash.com/photo-1529733905113-027ed85d7e33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="Chris" />
+              <img src={ Girl } alt="img error" />
             </div>
             <div className="Post-user-nickname">
-              <span>Chris</span>
+              <span>zedlj</span>
             </div>
           </div>
         </header>
         <div className="Post-image">
           <div className="Post-image-bg">
-            <img alt="Icon Living" src="https://pbs.twimg.com/media/DOXI0IEXkAAkokm.jpg" />
+            <img src={Everest} alt="img error"/>
           </div>
         </div>
         <div className="Post-caption">
-          <strong>ZEDLJ</strong> yoyo
+          <strong>zedlj</strong>  Mt. Everest
         </div>
       </article>;
     }
